@@ -11,3 +11,9 @@
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  astrachild
 */
+
+/*this fixes the header to the top of the page*/
+.main-header-bar {
+    position: fixed;
+    width: 100%;
+}
