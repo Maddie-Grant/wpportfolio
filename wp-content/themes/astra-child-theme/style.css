@@ -5,15 +5,113 @@
  Author:       Mette Gam
  Author URI:   http://personalbranding.evald-gam.dk
  Template:     astra
- Version:      1.2.0
+ Version:      1.2.2
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  astrachild
 */
 
-/*this fixes the header to the top of the page*/
+
+/*this fixes the header to the top of the page and gives it a solid coloured border at the bottom*/
 .main-header-bar {
     position: fixed;
     width: 100%;
+    padding: 0;
+    border-bottom: solid 1px #E0DEDE;
 }
+
+/*resizing font size and tweaking of margin in image-capture-text*/
+.wp-caption .wp-caption-text {
+    margin: 0;
+    font-size: 12px;
+
+}
+
+/*Removes box-shadow from logo*/
+.elementor-kit-38 img,
+header .site-logo-img .custom-logo-link img {
+    box-shadow: 0 0;
+}
+
+
+/*
+.elementor-widget-image .elementor-image img {
+    max-width: 400px;
+}
+*/
+@media only screen and (max-width: 600px) {
+
+    #cta-landing-page {
+        position: absolute !important;
+        padding: 20px;
+        bottom: -25px;
+        right: 15%;
+        border: 0px;
+
+    }
+
+    /*Removes border in the footer*/
+    .elementor-4 .elementor-element.elementor-element-2fadcb5 {
+        border: none !important;
+    }
+
+    /*Margin over the footer text*/
+    .elementor-4 .elementor-element.elementor-element-2fadcb5 {
+        margin-top: 60px;
+    }
+
+    /*margin under header*/
+    .ast-flex {
+        margin-bottom: 10px;
+    }
+
+    .elementor-379 .elementor-element.elementor-element-1f4fc72 .elementor-heading-title {
+        font-size: 30px;
+    }
+
+    /*puts a border under each image*/
+    .wp-caption .wp-caption-text {
+        border-bottom: solid 1px #aaa;
+    }
+
+
+    /*hides divider on mobile devices*/
+    .elementor-379 .elementor-element.elementor-element-6375901 .elementor-divider {
+        display: none;
+    }
+
+
+    .elementor-4 .elementor-element.elementor-element-a0ed818 .elementor-spacer-inner {
+        height: 60px !important;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    /*styling of cta button on landing page*/
+    #cta-landing-page {
+        font-size: 15px;
+        border: 0px;
+        position: absolute;
+        top: 10%;
+        right: -5%;
+        padding: 25px;
+    }
+}
+
+/*positioning of h1 on landing page*/
+.elementor-30 .elementor-element.elementor-element-1f2424e .elementor-heading-title {
+    position: absolute;
+    top: -160px;
+    right: 20px;
+    color: white;
+    text-transform: lowercase;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
