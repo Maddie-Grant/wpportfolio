@@ -5,7 +5,7 @@
  Author:       Mette Gam
  Author URI:   http://personalbranding.evald-gam.dk
  Template:     astra
- Version:      1.2.2
+ Version:      1.2.4
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
@@ -21,6 +21,12 @@
     border-bottom: solid 1px #E0DEDE;
 }
 
+/*removes border around burger menu and increses size*/
+.ast-header-break-point .main-header-bar .ast-button-wrap .menu-toggle {
+    border: none;
+    font-size: 30px;
+}
+
 /*resizing font size and tweaking of margin in image-capture-text*/
 .wp-caption .wp-caption-text {
     margin: 0;
@@ -29,7 +35,7 @@
 }
 
 /*Removes box-shadow from logo*/
-.elementor-kit-38 img,
+
 header .site-logo-img .custom-logo-link img {
     box-shadow: 0 0;
 }
@@ -66,6 +72,7 @@ header .site-logo-img .custom-logo-link img {
         margin-bottom: 10px;
     }
 
+    /*Increases size of burger menu*/
     .elementor-379 .elementor-element.elementor-element-1f4fc72 .elementor-heading-title {
         font-size: 30px;
     }
@@ -105,12 +112,13 @@ header .site-logo-img .custom-logo-link img {
 }
 
 /*positioning of h1 on landing page*/
-.elementor-30 .elementor-element.elementor-element-1f2424e .elementor-heading-title {
+.elementor-kit-38 h1 {
     position: absolute;
     top: -160px;
     right: 20px;
     color: white;
     text-transform: lowercase;
+    z-index: 5 !important;
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
